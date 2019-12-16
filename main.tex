@@ -2,6 +2,11 @@
 \input{macros_envs.tex}
 \synctex=1
 
+\usepackage{environ}
+\NewEnviron{killcontents}{}
+\let\proof\killcontents
+\let\endproof\endkillcontents
+
 \title{UGA Real Analysis Qualifying Exams}
 \date{}
 
